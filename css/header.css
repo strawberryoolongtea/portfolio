@@ -64,7 +64,11 @@ main {
 
 .container {width: 1746px; margin: 0 auto;}
 .container > div > div {display: inline-block;}
-.creative-img {width: 756; height: 210px;}
+.line1 {
+    width: 80%;
+    display: flex;
+}
+.creative-img {width: 70%; height: 210px;}
 .subinkim-img {width: 562;}
 .line-img {
     height: 160px;
