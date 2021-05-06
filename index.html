@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subin Kim Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="css/header.css">
+
+  <!-- adobe fonts -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'gpr1zpi',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
 </head>
 <body>
-  <h1>test</h1>
-  <h2>hello world</h2>
+  <header id="header">
+    <div class="logo">subin kim</div>
+    <div class="menu-box">
+      <div class="about">about</div>
+      <div class="list-box">
+        <ul class="menu-list">
+          <li>signin</li>
+          <li>site</li>
+          <li>script</li>
+          <li>css</li>
+          <li>board</li>
+          <li>contact</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="line1">
+        <div class="creative">creative</div>
+        <div class="line-img creative-img">
+          <!-- <img src="https://cdn.sanity.io/images/sjzl3ddh/production/72df2527db59ed1efb4392dd75e83dfd94fcfbf3-1608x2412.jpg?w=960" alt="line-image"> -->
+        </div>
+      </div>
+      <div class="line2">
+        <div class="web">web</div>
+        <div class="developer">developer</div>
+      </div>
+      <div class="line3">
+        <div class="line-img subinkim-img">
+          <!-- <img src="https://cdn.sanity.io/images/sjzl3ddh/production/efc493a43ba95476a3030c1759dd33b80fc50974-1620x2430.jpg?w=960" alt="line-image"> -->
+        </div>
+        <div class="subinkim">subin kim</div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
