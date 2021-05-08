@@ -12,8 +12,6 @@ body {
 main {
   font-size: 240px;
   color: #fff;
-  pointer-events: none;
-  user-select: none;
 }
 
 .container {
