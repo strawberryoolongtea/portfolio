@@ -16,4 +16,4 @@
 * sign out
 * board using PHP / MySQL
 
-## [Figma view](https://www.figma.com/file/0dt4LEPyQCbD0pHDjLQZcn/react-portfolio?node-id=0%3A1)
+## [Figma view](https://www.figma.com/file/XfhsDeaMvJJvFzFFniJnCY/portfolio_ver.2?node-id=0%3A1)
