@@ -50,7 +50,7 @@ main {
 .logo-content {
   width: 136px;
 
-  font-family: 'Noto Sans';
+  font-family: shackleton;
   font-size: 1.5rem;
   font-weight: 700;
   
@@ -87,6 +87,7 @@ main {
   transform: rotate(60turn);
   transform-style: preserve-3d;
 
+  font-family: shackleton;
   font-size: 10rem;
   font-weight: 700;
 
@@ -116,6 +117,7 @@ main {
   width: 100%;
 }
 .web {
+  font-family: shackleton;
   font-size: 10rem;
   font-weight: 700;
 
@@ -129,6 +131,7 @@ main {
   transform: rotate(60turn);
   transform-style: preserve-3d;
 
+  font-family: shackleton;
   font-size: 10rem;
   font-weight: 700;
 
