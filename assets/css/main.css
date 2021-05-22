@@ -1,0 +1,140 @@
+:root {
+  --color-test: #333;
+  --color-orange: #ffdeb2;
+  --color-red: #ff004f;
+  --color-black: #000;
+  --color-white: #fff;
+}
+body {
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {display: none;}
+#scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  text-align: center;
+  line-height: 80px;
+}
+main {
+  position: relative;
+  width: 100vw;
+  height: 5050px;
+  background-color: var(--color-orange);
+}
+#logo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  width: 200px;
+  height: 200px;
+  padding: 40px;
+  box-sizing: border-box;
+
+  background-color: var(--color-black);
+}
+.logo-content {
+  width: 136px;
+
+  font-family: 'Noto Sans';
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+  text-transform: uppercase;
+  line-height: 1.8rem;
+
+  /* background-color: var(--color-test); */
+  color: var(--color-white);
+}
+.cartoon {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 785px;
+  mix-blend-mode: color-burn;
+  z-index: 10;
+}
+.cut1 {
+  top: 1600px;
+  left: 0;
+  background-image: url("../images/cartooncut2.jpg");
+}
+.cut2 {
+  top: 3000px;
+  right: 0;
+  background-image: url("../images/cartooncut6.jpg")
+}
+.rotate {
+  position: absolute;
+  top: 1200px;
+  left: -900px;
+  transform: rotate(60turn);
+  transform-style: preserve-3d;
+
+  font-size: 10rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  color: var(--color-orange);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-red);
+}
+.rotate:last-child {color: var(--color-red)}
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  height: 790px;
+  margin: 0 auto 100px;
+  /* background: var(--color-test); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.gif1 {background-image: url("../images/kanna.gif");}
+.gif2 {background-image: url("../images/gundream.gif")}
+.gif3 {background-image: url("../images/rengoku.gif");}
+
+.main-image > img {
+  width: 100%;
+}
+.web {
+  font-size: 10rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+.rotate2 {
+  position: absolute;
+  top: 1600px;
+  right: -800px;
+  transform: rotate(60turn);
+  transform-style: preserve-3d;
+
+  font-size: 10rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  color: var(--color-orange);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-red);
+}
+.rotate2:last-child {color: var(--color-red)}
