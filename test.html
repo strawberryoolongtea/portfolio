@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 300vh;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      /* overflow: hidden; */
+      background-color: rgb(20,20,20);
+    }
+
+    .wrap {
+      position: relative;
+      perspective: 100px;
+      text-transform: uppercase;
+    }
+
+    .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: rgb(25,25,25);
+      font-size: 10vw;
+      font-weight: bold;
+      text-shadow:
+      -1px -1px 0 rgba(240,240,240,1),  
+        1px -1px 0 rgba(240,240,240,1),
+        -1px 1px 0 rgba(240,240,240,1),
+        1px 1px 0 rgba(240,240,240,1);
+      transform-style: preserve-3d;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+    <div class="text">CREATIVE</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script>
+    window.onload = () => {
+      const text = document.querySelectorAll('.text');
+      for (let i = 0; i < text.length; i++) {
+        gsap.to(text[i], {duration: 5, x: 10 * i, y: 20 * i, rotation: 3 * i})
+      }
+    };
+  </script>
+</body>
+</html>
