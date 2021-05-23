@@ -110,9 +110,9 @@ main {
   background-size: cover;
   background-position: center;
 }
-.gif1 {background-image: url("../images/kanna.gif");}
-.gif2 {background-image: url("../images/gundream.gif")}
-.gif3 {background-image: url("../images/rengoku.gif");}
+.gif1 {background-image: url("../video/ghostInTheShell01.gif");}
+.gif2 {background-image: url("../video/ghostInTheShell02.gif")}
+.gif3 {background-image: url("../video/ghostInTheShell03.gif");}
 
 .main-image > img {
   width: 100%;
