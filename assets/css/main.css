@@ -138,7 +138,7 @@ main {
 .rotate2 {
   position: absolute;
   top: 1600px;
-  right: -800px;
+  right: -1200px;
   transform: rotate(60turn);
   transform-style: preserve-3d;
   
@@ -150,6 +150,7 @@ main {
   color: var(--color-orange);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--color-red);
+  mix-blend-mode: screen;
   animation: hue-rotate-reverse 3s linear infinite;
 }
 @keyframes hue-rotate-reverse {
@@ -160,10 +161,22 @@ main {
 
 #intro {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100vw;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100vw;
   height: 100vh;
   background-color: var(--color-red)
 }
-#intro > .text {}
+#intro .inner {
+  width: 1400px;
+  /* background-color: rgba(0,0,0,.5); */
+}
+#intro span {
+  display: inline-block;
+  width: 200px;
+  font-size: 2rem;
+  color: #fff;
+  font-family: shackleton;
+  margin: 50px;
+}
