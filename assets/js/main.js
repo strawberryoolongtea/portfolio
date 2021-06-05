@@ -30,20 +30,17 @@ function addChild () {
   about.appendChild(div)
 }
 setTimeout(function () {
-  let aboutChildAdd = setInterval(addChild, 100);
+  let aboutChildAdd = setInterval(addChild, 200);
   setTimeout(function () {
     clearTimeout(aboutChildAdd)
   }, 8100)
-  setTimeout(() => {
+  let rotateChild = setInterval(() => {
     const aboutChild = [...document.querySelectorAll('#intro span')]
     for (let i = 0; i < aboutChild.length; i++) {
-      gsap.to(aboutChild[i], {rotation: -50})
+      gsap.to(aboutChild[i], {rotation: -50 * i})
     }
-  },8200)
+  },4200)
   setTimeout(function () {
-    const photo = [...document.querySelectorAll('.site-view')];
-    setTimeout(function () {
-      photo[0].style.display = 'none'
-    }, 8300)
-  },8200)
+    clearTimeout(rotateChild)
+  }, 5000)
 }, 5000)

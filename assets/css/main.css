@@ -170,29 +170,6 @@ main {
   background-color: var(--color-red);
   overflow: hidden;
 }
-#intro .site-view {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 400px;
-  height: 400px;
-  /* background-image: url('../images/me_03.jpg'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  /* background-color: #dcff00; */
-  z-index: 1;
-}
-#intro .site-view:nth-child(1) {background-image: url('../images/me_01.jpg');}
-#intro .site-view:nth-child(2) {background-image: url('../images/me_02.jpg');}
-#intro .site-view:nth-child(3) {background-image: url('../images/me_03.jpg');}
-#intro .site-view:nth-child(4) {background-image: url('../images/me_04.jpg');}
-#intro .site-view:nth-child(5) {background-image: url('../images/me_05.jpg');}
 #intro .inner {
   width: 1400px;
   /* background-color: rgba(0,0,0,.5); */
