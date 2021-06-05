@@ -40,4 +40,10 @@ setTimeout(function () {
       gsap.to(aboutChild[i], {rotation: -50})
     }
   },8200)
+  setTimeout(function () {
+    const photo = [...document.querySelectorAll('.site-view')];
+    setTimeout(function () {
+      photo[0].style.display = 'none'
+    }, 8300)
+  },8200)
 }, 5000)
