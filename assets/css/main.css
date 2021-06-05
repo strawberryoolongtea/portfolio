@@ -160,6 +160,7 @@ main {
 .rotate2:last-child {color: var(--color-red)}
 
 #intro {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -167,6 +168,18 @@ main {
   width:100vw;
   height: 100vh;
   background-color: var(--color-red)
+}
+#intro .site-view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-color: #dcff00;
+  z-index: 1;
 }
 #intro .inner {
   width: 1400px;

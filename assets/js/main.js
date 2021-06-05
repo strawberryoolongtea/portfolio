@@ -23,7 +23,6 @@ window.addEventListener('scroll', () => {
   }
 });
 const about = document.querySelector('#intro .inner');
-const aboutChild = [...document.querySelectorAll('#intro div')]
 function addChild () {
   const div = document.createElement('span');
   const testTxt = document.createTextNode('about me');
@@ -31,15 +30,14 @@ function addChild () {
   about.appendChild(div)
 }
 setTimeout(function () {
-  let aboutChildAdd = setInterval(addChild, 200);
+  let aboutChildAdd = setInterval(addChild, 100);
   setTimeout(function () {
     clearTimeout(aboutChildAdd)
-  }, 8200)
-}, 5000)
-window.addEventListener('scroll', () => {
+  }, 8100)
   setTimeout(() => {
+    const aboutChild = [...document.querySelectorAll('#intro span')]
     for (let i = 0; i < aboutChild.length; i++) {
       gsap.to(aboutChild[i], {rotation: -50})
     }
-  }, 13200)
-})
+  },8200)
+}, 5000)
