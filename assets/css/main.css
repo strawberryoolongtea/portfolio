@@ -1,184 +1,130 @@
-:root {
-  --color-test: #333;
-  --color-orange: #000;
-  --color-red: #00f;
-  --color-black: #000;
-  --color-white: #fff;
+/* COMMON */
+a {text-decoration: none;}
+.inner {
+  height: 300vh;
+  position: relative;
 }
-body {
-  overflow-y: scroll;
-}
-body::-webkit-scrollbar {display: none;}
-#scroll {
+
+/* WRAPPER */
+#wrapper {}
+
+/* HEADER */
+header {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
-  width: 80px;
-  height: 80px;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  display: none;
+  height: 40px;
+  /* background-color: royalblue; */
+}
+header .header__gnb {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header__gnb li {
+  margin: 0 20px;
+  line-height: 40px;
+  /* background-color: orange; */
+}
+header .header__gnb li.home {}
+header .header__gnb li a {
+  color: #fff;
+}
 
-  text-align: center;
-  line-height: 80px;
-}
-main {
-  position: relative;
-  width: 100vw;
-  height: 5050px;
-  overflow: hidden;
-  background-color: var(--color-orange);
-}
+/* LOGO */
 #logo {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-
-  width: 200px;
-  height: 200px;
-  padding: 40px;
-  box-sizing: border-box;
-
-  background-color: var(--color-black);
-}
-.logo-content {
-  width: 136px;
-
-  font-family: shackleton;
-  font-size: 1.5rem;
-  font-weight: 700;
-  
-  text-transform: uppercase;
-  line-height: 1.8rem;
-
-  /* background-color: var(--color-test); */
-  color: var(--color-white);
-}
-.cartoon {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 600px;
-  height: 785px;
-  mix-blend-mode: color-burn;
-  z-index: 10;
-}
-.cut1 {
-  top: 1600px;
-  left: 0;
-  background-image: url("../images/cartooncut2.jpg");
-}
-.cut2 {
-  top: 3000px;
-  right: 0;
-  background-image: url("../images/cartooncut6.jpg")
-}
-.rotate {
-  position: absolute;
-  top: 1200px;
-  left: -900px;
-  transform: rotate(60turn);
-  transform-style: preserve-3d;
-
-  font-family: shackleton;
-  font-size: 10rem;
-  font-weight: 700;
-
-  text-transform: uppercase;
-  color: var(--color-orange);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--color-red);
-  mix-blend-mode: screen;
-  animation: hue-rotate 3s linear infinite;
-}
-@keyframes hue-rotate {
-  from {
-    filter: hue-rotate(0);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
-}
-.rotate:last-child {color: var(--color-red)}
-.main-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 960px;
-  height: 540px;
-  margin: 0 auto 100px;
-  /* background: var(--color-test); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.gif1 {background-image: url("../video/ghostInTheShell04.gif");}
-.gif2 {background-image: url("../video/ghostInTheShell02.gif")}
-.gif3 {background-image: url("../video/ghostInTheShell03.gif");}
-
-.main-image > img {
-  width: 100%;
-}
-.web {
-  font-family: shackleton;
-  font-size: 10rem;
-  font-weight: 700;
-  
-  text-transform: uppercase;
-  color: var(--color-red);
-}
-.rotate2 {
-  position: absolute;
-  top: 1600px;
-  right: -1200px;
-  transform: rotate(60turn);
-  transform-style: preserve-3d;
-  
-  font-family: shackleton;
-  font-size: 10rem;
-  font-weight: 700;
-  
-  text-transform: uppercase;
-  color: var(--color-orange);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--color-red);
-  mix-blend-mode: screen;
-  animation: hue-rotate-reverse 3s linear infinite;
-}
-@keyframes hue-rotate-reverse {
-  from {filter: hue-rotate(360deg)}
-  to {filter: hue-rotate(0)}  
-}
-.rotate2:last-child {color: var(--color-red)}
-
-#intro {
+  background-color: #333;
   position: relative;
+}
+#logo .inner {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: orange;
+}
+#logo .inner .logo__text {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+/* VISUAL */
+#visual {}
+#visual .inner {
+  background-color: salmon;
+}
+#visual .inner .visual__text {
+  position: absolute;
+}
+#visual .inner .visual__text.text--creative {
+  top: 0;
+  left: 0;
+}
+#visual .inner .visual__text.text--web {
+  width: 100px;
+  height: 20px;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  background-color: thistle;
+  z-index: 2;
+  text-align: center;
+}
+#visual .inner .visual__text.text--developer {
+  bottom: 0;
+  right: 0;
+}
+#visual .inner .visual__box {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  width: 70vw;
+  height: 240vh;
+  background-color: tan;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width:100vw;
-  height: 100vh;
-  background-color: var(--color-red);
+  flex-direction: column;
+  justify-content: space-between;
+}
+#visual .inner .visual__box .box__image {
+  width: 70vw;
+  height: calc((240vh / 3) - 120px);
+}
+#visual .inner .visual__box .box__image:nth-child(1) {
+  background-color: royalblue;
+}
+#visual .inner .visual__box .box__image:nth-child(2) {
+  background-color: saddlebrown;
+}
+#visual .inner .visual__box .box__image:nth-child(3) {
+  background-color: seagreen;
+}
+
+/* ABOUT */
+#about {}
+#about .inner {
   overflow: hidden;
+  background-color: turquoise;
 }
-#intro .inner {
-  width: 1400px;
-  /* background-color: rgba(0,0,0,.5); */
+#about .inner .about__image {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
+  background-color: violet;
 }
-#intro span {
+#about .inner .about__text {}
+#about .inner .about__text span {
   display: inline-block;
-  width: 200px;
-  font-size: 2rem;
   color: #fff;
-  font-family: shackleton;
-  margin: 50px;
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
 }

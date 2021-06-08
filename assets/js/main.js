@@ -1,46 +1,29 @@
-const scroll = document.querySelector('#scroll');
-const logo = document.querySelector('.logo-container');
-const rotate = document.querySelectorAll('.rotate');
-const rotate2 = document.querySelectorAll('.rotate2');
-const cartoon = document.querySelector('.cartoon');
+// .text--creative 하위에 div{creative} 요소 생성
+for (let i = 0; i < 10; i++) { // 10: div 요소 반복 생성 횟수
+  const textCreative = document.querySelector('.text--creative');
+  const elCreative = document.createElement('div');
+  const elTextCreative = document.createTextNode('creative');
 
-window.addEventListener('scroll', () => {
- scroll.innerText = window.scrollY;
-  for (let i = 0; i < rotate.length; i++) {
-    gsap.to(rotate[i], {
-     rotation: - window.scrollY * (i * 5) / 800,
-     x: window.scrollY * (i * 5) / 100,
-     y: - window.scrollY * (i * 5) / 800,
-     z: window.scrollY * (i * 5) / 100
-    })
-  }
-  for (let i = 0; i < rotate2.length; i++) {
-    gsap.to(rotate2[i], {
-      rotation: - window.scrollY * (i * 5) / 1200,
-      x: - window.scrollY * (i * 8) / 600,
-      y: window.scrollY * (i * 10) / 800,
-    })
-  }
-});
-const about = document.querySelector('#intro .inner');
-function addChild () {
-  const div = document.createElement('span');
-  const testTxt = document.createTextNode('about me');
-  div.appendChild(testTxt)
-  about.appendChild(div)
+  elCreative.appendChild(elTextCreative);
+  textCreative.appendChild(elCreative);
 }
-setTimeout(function () {
-  let aboutChildAdd = setInterval(addChild, 200);
-  setTimeout(function () {
-    clearTimeout(aboutChildAdd)
-  }, 8100)
-  let rotateChild = setInterval(() => {
-    const aboutChild = [...document.querySelectorAll('#intro span')]
-    for (let i = 0; i < aboutChild.length; i++) {
-      gsap.to(aboutChild[i], {rotation: -50 * i})
-    }
-  },4200)
-  setTimeout(function () {
-    clearTimeout(rotateChild)
-  }, 5000)
-}, 5000)
+
+// .text--developer 하위에 div{developer} 요소 생성
+for (let i = 0; i < 10; i++) { // 10: div 요소 반복 생성 횟수
+  const textDeveloper = document.querySelector('.text--developer');
+  const elDeveloper = document.createElement('div');
+  const elTextDeveloper = document.createTextNode('developer');
+
+  elDeveloper.appendChild(elTextDeveloper);
+  textDeveloper.appendChild(elDeveloper);
+}
+
+// .about-text 하위에 div 요소 생성
+for (let i = 0; i < 10; i++) {
+  const textAbout = document.querySelector('.about__text');
+  const elAbout = document.createElement('span');
+  const elTextAbout = document.createTextNode('about me');
+
+  elAbout.appendChild(elTextAbout);
+  textAbout.appendChild(elAbout);
+}
