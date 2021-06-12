@@ -1,3 +1,8 @@
+const logoElSubin = document.querySelectorAll('.logo__text')[0].textContent.split('')
+const logoElKim = document.querySelectorAll('.logo__text')[1].textContent.split('')
+const logoElPort = document.querySelectorAll('.logo__text')[2].textContent.split('')
+console.log(logoElSubin, logoElKim, logoElPort);
+
 // .text--creative 하위에 div{creative} 요소 생성
 for (let i = 0; i < 10; i++) { // 10: div 요소 반복 생성 횟수
   const textCreative = document.querySelector('.text--creative');
